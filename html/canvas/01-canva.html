@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dibujo</title>
+</head>
+<body>
+    <canvas id="dibujo1" width="200" height="200"
+        style="border: 2px solid green;"></canvas>
+    
+    <canvas id="dibujo2" width="200" height="200"
+    style="border: 2px solid green;"></canvas>
+
+
+
+<script>
+    var dibujo1 = document.getElementById('dibujo1');
+    var ctx_dibujo1 = dibujo1.getContext("2d");
+    ctx_dibujo1.font = "40px Arial";
+    ctx_dibujo1.fillStyle = "blue";
+    ctx_dibujo1.fillText("Canvas", 43, 80);
+    //////////////////
+    var dibujo2 = document.getElementById('dibujo2');
+    var ctx_dibujo2 = dibujo2.getContext("2d");
+    ctx_dibujo2.beginPath();
+    const ml = 100, mt = 100, radio = 80, quitarFramentos = 0,
+    vueltas = 2 * Math.PI;
+    ctx_dibujo2.arc(ml, mt, radio, quitarFramentos, vueltas);
+    ctx_dibujo2.strokeStyle = "red"
+    ctx_dibujo2.stroke();
+</script>
+</body>
+</html>

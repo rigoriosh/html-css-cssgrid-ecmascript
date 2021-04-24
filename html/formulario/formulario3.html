@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buy tickets</h1>
+    <form action="">
+        <br>
+        <label for="birdDate">Fecha de nacimeinto</label><br>
+        <input type="date" name="birdDate" id="birdDate">
+        <br><br>
+        <label for="datomax">Fecha de compra</label><br>
+        <input type="date" name="birdDate" id="datomax" max="2021-03-20" min="2021-02-20">
+        <br><br>
+        <label for="phone">Phone number</label> <br>
+        <input type="tel" name="birdDate" id="phone" pattern="[0-9]{3}-[0-9]{7}"
+            placeholder="123-xxxxxxx" required> <br>
+        <br>
+        <label for="cantidad">Tickets number</label><br>
+        <input type="number" name="birdDate" id="cantidad" min="1" max="12">
+        <br><br>
+        <label for="nombre">Name</label><br>
+        <input type="text" name="birdDate" id="nombre" size="30">
+        <br><br>
+        <label for="nombre">Pin</label><br>
+        <input type="text" name="birdDate" id="Pin" size="6">
+        <br><br>
+        <input type="submit" value="Enviar">
+        
+    </form>
+</body>
+</html>
